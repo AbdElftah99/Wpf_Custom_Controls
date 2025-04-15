@@ -12,6 +12,7 @@ namespace WpfProject.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+
             throw new NotImplementedException();
         }
 
