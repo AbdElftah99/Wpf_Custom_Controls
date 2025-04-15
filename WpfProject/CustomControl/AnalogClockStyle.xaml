@@ -11,7 +11,7 @@
                         <Line x:Name="HourHand" Stroke="Black" StrokeThickness="4" 
                               X1="50" Y1="50" X2="50" Y2="20"/>
                         <Line x:Name="MinuteHand" Stroke="Black" StrokeThickness="3" 
-                              X1="50" Y1="50" X2="50" Y2="10"/>
+                              X1="50" Y1="50" X2="50" Y2="20"/>
                         <Line x:Name="SecondHand" Stroke="Red" StrokeThickness="2" 
                               X1="50" Y1="50" X2="50" Y2="5"/>
                     </Grid>
