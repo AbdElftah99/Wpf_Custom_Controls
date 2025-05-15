@@ -11,10 +11,9 @@ namespace WpfProject.Converters
     public class DivisionConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-
-            throw new NotImplementedException();
-        }
+        => double.TryParse(value.ToString(), out double numator)
+            && double.TryParse(parameter.ToString(), out double denominator)
+            && denominator != 0 ? numator / denominator : 0;
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {

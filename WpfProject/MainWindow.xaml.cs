@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfProject.CustomControl;
 
 namespace WpfProject
 {
@@ -19,6 +20,11 @@ namespace WpfProject
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void AnalogClock_TimeChanged(object s, TimeChangedEventArgs e)
+        {
+            this.txtBox1.Text = e.Time.ToString("hh:mm:ss tt");
         }
     }
 }
